@@ -1,0 +1,50 @@
+
+
+body{
+  font-family: Roboto, "Helvetia Neue", sans-serif;
+  background-color: #fff;
+  padding-top: 60px;
+  height: 100%;
+}
+
+body * {
+  font-family: Roboto, "Helvetia Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+ }
+
+svg {
+  cursor: pointer;
+  
+  rect {
+    transition: all .3s ease-in-out;
+  }
+  
+  &:hover{
+    .middle {
+      x: 0;
+      opacity: 0;
+    }
+    .top {
+      transform: rotate(45deg);
+      transform-origin: center top;
+      x: 50px;
+      y: 35px;
+    }
+    .bottom {
+      transform: rotate(-45deg);
+      transform-origin: center top;
+      x: -20px;
+      y: 25px;
+    }
+  }
+
+}
